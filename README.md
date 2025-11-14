@@ -1,7 +1,7 @@
 # Demand Forecasting Via Machine Learning
 This is a portion of my capstone submission for my bachelor's degree in computer science. Long before I had embarked on a computer science degree, I thought the world of demand planning and demand forecasting was ripe for machine learning. Organizations often have mountains of clean, historic item demand data that's perfect for 
-machine learning. There can also be a wide range of inputs that impact that demand, like seasonality, weather, holidays, etc. The capstone was a machine learning project so it felt like a good opportunity to put the idea to the test. 
-It was my first pass in machine learning so I learned a lot about the process and particularly about the linear regression model used here.
+machine learning. There can also be a wide range of inputs that impact that demand, like seasonality, weather, holidays, etc. The capstone was a ML project so it felt like a good opportunity to put the idea to the test. 
+It was my first pass at ML so I learned a lot about the process and particularly about the linear regression model used here.
 <br><br>
 This was written in Visual Studio Code, with the [main.py](https://github.com/josh-mccurry/ML_Demand_Forecasting/blob/main/main.py) orchestrating instantiation of the different working classes and serving as an outline for when I ultimately would transfer it to Google Colab. 
 
