@@ -1,7 +1,7 @@
-from sklearn.linear_model import LinearRegression
+from sklearn.ensemble import HistGradientBoostingRegressor
 import joblib
 
-class modeler:
+class regressor:
 
     def split_data(self, df, features):
 
@@ -33,7 +33,16 @@ class modeler:
     
     # Trains the linear regression model
     def train_model(self, X_train, y_train):
-        model = LinearRegression()
+        model = HistGradientBoostingRegressor(
+            loss = 'poisson',
+            learning_rate = 0.02,
+            max_iter = 750,
+            min_samples_leaf = 40,
+
+            categorical_features=[0,1],
+            early_stopping = True,
+            n_iter_no_change = 10
+        )
         model.fit(X_train, y_train)
         return model
 
